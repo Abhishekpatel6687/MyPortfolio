@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from "./Nav"
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -7,6 +8,8 @@ import {
   } from "react-icons/fa";
 const Contact = () => {
   return (
+    <>
+    <Nav/>
     <div className='contact'>
     <div className='container'>
         <div className='contactSection'>
@@ -36,6 +39,7 @@ const Contact = () => {
         </div>
     </div>
     </div>
+    </>
   )
 }
 

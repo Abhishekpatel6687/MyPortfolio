@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaCamera, FaCode, FaApple, FaFileVideo, FaSearchPlus } from "react-icons/fa";
+import Nav from "./Nav"
 
 const Services = () => {
     const[header]=React.useState({mainHeader:"SERVICES",subHeading:"My Services",text:" Lauren Ispam is simply dummy text of the printing and typecasting interest in external duty."});
@@ -47,7 +48,9 @@ const Services = () => {
     },
 ])
   return (
-    <div className="services">
+    <>
+    <Nav />
+     <div className="services">
       <div className="container">
         <div className="services_header">
           <div className="common">
@@ -73,6 +76,9 @@ const Services = () => {
         </div>
       </div>
     </div>
+
+    </>
+   
   );
 };
 

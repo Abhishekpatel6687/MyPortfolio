@@ -1,17 +1,24 @@
 import React from "react";
+import Nav from "./Nav"
+import About from "./About"
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaPhoneAlt,
   FaInstagram,
 } from "react-icons/fa";
-const Banner = () => {
+import Services from "./Services";
+import Prices from "./Prices";
+import Contact from "./Contact";
+const Home = () => {
   const [state] = React.useState({
     title: "I am Abhishek Patel",
     text: "I am Abhishek, Professional Web Developer with long time experience in this field",
     image:'/images/myPic.png',
   });
   return (
+    <>
+    <Nav/>
     <div className="header">
       <div className="container">
         <div className="row">
@@ -34,10 +41,8 @@ const Banner = () => {
                 </ul>
                 <h1>{state.title}</h1>
                 <p>{state.text}</p>
-                <div className="header_buttons">
-                  <a href="" className="btn btn-outline">
-                    My Portfolio
-                  </a>
+                <div>
+                   <button className="btn btn-outline">My Portfolio</button> 
                 </div>
               </div>
             </div>
@@ -50,6 +55,11 @@ const Banner = () => {
         </div>
       </div>
     </div>
+    <About />
+    <Services/>
+    <Prices/>
+    <Contact/>
+    </>
   );
 };
-export default Banner;
+export default Home;

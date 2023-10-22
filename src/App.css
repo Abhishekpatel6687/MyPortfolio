@@ -78,7 +78,7 @@ height: 650px;
 .header_content{
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 80%;
   width: 100%;
   color: white;
   margin: 0 50px;
@@ -86,7 +86,8 @@ height: 650px;
 .header_ul{
   list-style-type:none ;
   display: flex;
-  margin-bottom:20px ;
+  /* margin-top:5vw ; */
+  margin-bottom:2vw ;
 }
 .header_ul li{
 width: 50px;
@@ -97,23 +98,31 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin: 0 10px;
+cursor: pointer;
 }
 .header_ul a{
   color: white;
-  font-size: 18px;
+  font-size: 2vw;
+  display: flex;
+}
+.header_ul a:hover{
+  color: rgb(221, 199, 199);
+}
+.header_ul li:hover{
+ background-color: rgb(17, 65, 70);
 }
 .header_ul li:first-child{
   margin-left: 0;
 }
 
 .header_section h1{
-  font-size: 57px;
+  font-size: 3.2vw;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .header_section p{
-  font-size: 26px;
-  /* font-weight: normal; */
+  font-size: 24px;
+  font-weight: normal;
   line-height: 40px;
   margin-bottom:50px ;
 }
@@ -121,21 +130,21 @@ margin: 0 10px;
   outline:none;
   border: none;
   color: white;
+  background-color: #0c144b;
   text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: medium;
+}
+.btn:hover{
+  background-color: #0b8686;
+  color: #120b79d0;
+  
 }
 .btn-outline{
 border: 2px solid #ff4a57;
 border-radius: 50px;
 padding: 13px 40px;
-}
-.btn_smart{
-  background-color: #ff4a57;
-  padding: 13px 40px;
-  border-radius: 50px;
-}
-.play{
-  font-size: 25px !important;
-  padding-top: 10px;
 }
 .banner_img{
  padding: 0 50px;
@@ -143,7 +152,7 @@ padding: 13px 40px;
  margin-top: 80px;
 }
 .banner_img img{
-  width: 30vw;
+  width: 35vw;
 }
 /* Services */
 .services{

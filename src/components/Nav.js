@@ -1,5 +1,7 @@
 import React from "react";
 import {FaAlignJustify} from "react-icons/fa";
+import {Link} from "react-router-dom"
+
 const Nav = () => {
   const [state,setState]=React.useState(true);
   return (
@@ -14,19 +16,19 @@ const Nav = () => {
           {state?(
             <ul className="navbar_right">
             <li>
-              <a href="">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="">Skills & Projects</a>
+              <Link to="/services">Skills & Projects</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="">Portfolio</a>
+              <Link to="/prices">price</Link>
             </li>
             <li>
-              <a href="">contact</a>
+              <Link to="/contact">contact</Link>
             </li>
           </ul>
           ):null
