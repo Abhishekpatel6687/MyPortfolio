@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "./Nav"
 
 const Prices = () => {
   const [header] = React.useState({
@@ -39,7 +40,8 @@ const Prices = () => {
     },
   ]);
   return (
-    <div>
+    <>
+    <Nav/>
       <div className="prices">
         <div className="container">
           <div className="common">
@@ -72,7 +74,7 @@ const Prices = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Prices;

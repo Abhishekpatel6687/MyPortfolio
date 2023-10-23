@@ -1,5 +1,5 @@
 import React from "react";
-
+import Nav from "./Nav"
 const About = () => {
   const [header] = React.useState({
     subHeading: "About Me",
@@ -12,6 +12,8 @@ const About = () => {
   {id:4,title:"LinkedIn",text:"abhishek-patel-2a6599240"},
 ]);
   return (
+    <>
+    <Nav />
     <div className="about">
       <div className="container">
         <div className="common">
@@ -23,7 +25,7 @@ const About = () => {
         <div className="row h-650 alignCenter">
             <div className="col-6">
             <div className="about_img">
-                <img src="/images/pic.png"/>
+                <img src="/images/pic.png" alt="img"/>
             </div>
              
             </div>
@@ -51,6 +53,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
