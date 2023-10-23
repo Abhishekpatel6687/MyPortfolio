@@ -3,8 +3,8 @@ import { FaGithub, FaCamera, FaCode, FaApple, FaFileVideo, FaSearchPlus } from "
 import Nav from "./Nav"
 
 const Services = () => {
-    const[header]=React.useState({mainHeader:"SERVICES",subHeading:"My Services",text:" Lauren Ispam is simply dummy text of the printing and typecasting interest in external duty."});
- const [state]=React.useState([
+    const[header]=React.useState({mainHeader:"SERVICES",subHeading:"Skill & Education",text:" Lauren Ispam is simply dummy text of the printing and typecasting interest in external duty."});
+ const data=[
     {
         id:1,
         icon:<FaGithub  className="commonIcon" />,
@@ -46,7 +46,7 @@ const Services = () => {
         heading:"SEO Expert",
         text:"Server side propseven a particular function export another page Task is going on in server crops",
     },
-])
+]
   return (
     <>
     <Nav />
@@ -61,7 +61,7 @@ const Services = () => {
           </div>
 
           <div className="row ">
-          {state.map(info=> {
+          {data.map(info=> {
             return(
             <div className="col-4">
               <div className="services_box">

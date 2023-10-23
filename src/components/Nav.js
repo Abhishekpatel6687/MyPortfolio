@@ -10,27 +10,17 @@ const Nav = () => {
         <div className="navbar_container">
           <ul className="navbar_left">
             <div className="navbar_left-logo">
-              <img src="/images/1.png" alt="logo"/>
+              <img src="/images/logo1.png" alt="logo"/>
             </div>
           </ul>
           {state?(
-            <ul className="navbar_right">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/services">Skills & Projects</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/prices">price</Link>
-            </li>
-            <li>
-              <Link to="/contact">contact</Link>
-            </li>
-          </ul>
+            <div className="navbar_right">
+              <button><Link to="/">Home</Link> </button>                  
+              <button><Link to="/services">Skills</Link></button>           
+              <button><Link to="/about">About</Link> </button>           
+              <button><Link to="/prices">Projects</Link></button>                              
+              <button><Link to="/contact">contact</Link> </button>    
+          </div>
           ):null
           }
          
