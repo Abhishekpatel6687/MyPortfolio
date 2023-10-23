@@ -2,7 +2,7 @@ import React from "react";
 import {FaAlignJustify} from "react-icons/fa";
 import {Link} from "react-router-dom"
 
-const Nav = () => {
+const Nav = () => { 
   const [state,setState]=React.useState(true);
   return (
     <nav className="navbar"> 
